@@ -42,5 +42,6 @@ public class ElectricityBill {
 			System.out.println("your electricity bill is "+(energy_charges+duty+fixed_charges));
 		}
 	}
+	//added few lines
 
 }
