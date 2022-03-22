@@ -12,13 +12,16 @@ public class ReverseTheGivenNumber {
 	private void reverseTheGivenNumber() {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a number to reverse");
-		int num=sc.nextInt();
+		int num=sc.nextInt(),reverse=0;
 		sc.close();
 		while(num>0)
 		{
-			System.out.print(num%10);
+			int rem=num%10;
+			reverse=(reverse*10)+rem;
 			num/=10;
 		}
+		System.out.println(reverse);
+		
 	}
 
 }
