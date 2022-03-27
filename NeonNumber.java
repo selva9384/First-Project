@@ -25,7 +25,7 @@ public class NeonNumber {
 		}
 		else
 		{
-			System.out.println(number+" is not a neon number");
+			System.out.println(number+" is not a neon number");//
 		}
 	}
 
