@@ -17,7 +17,6 @@ public class PolindromeInString {
 			compare=word.charAt(i)+compare;
 			i--;
 		}
-		System.out.println(compare);
 		if(word.equals(compare))
 			System.out.println(word+" is a polindrome");
 		else
