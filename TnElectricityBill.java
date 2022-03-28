@@ -18,14 +18,14 @@ public class TnElectricityBill {
 		{
 			System.out.println("You don't need to pay any charges");
 		}
-		else if(unit>100 && unit<=200)
+		else if(unit>100)
 		{
 			energy_charges=unit-100;
 			duty=18;
 			fixed_charges=20;
 			System.out.println("Your electricity fees is "+(energy_charges*1.5+duty+fixed_charges));
 		}
-		else if(unit>200 && unit<=500)
+		else if(unit>200)
 		{
 			unit-=200;
 			energy_charges=(100*2)+(unit*3);
@@ -33,7 +33,7 @@ public class TnElectricityBill {
 			fixed_charges=30;
 			System.out.println("Your electricity bill is "+(energy_charges+duty+fixed_charges));
 		}
-		else if(unit>500)
+		else if(unit)
 		{
 			unit-=500;
 			energy_charges=(float) ((unit*6.6)+(100*3.5)+(300*4.6));
@@ -42,6 +42,5 @@ public class TnElectricityBill {
 			System.out.println("your electricity bill is "+(energy_charges+duty+fixed_charges));
 		}
 	}
-	//added few lines
 
 }
