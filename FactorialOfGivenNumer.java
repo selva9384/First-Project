@@ -11,12 +11,12 @@ public class FactorialOfGivenNumer {
 	private void factorial() {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a number");
-		int num=sc.nextInt(),factorial=1;
+		int num=sc.nextInt(),factorial=1;//getting input from user
 		for(;num>0;num--)
 		{
-			factorial*=num;
+			factorial*=num; //calculating factorial
 		}
-		System.out.println("Factorial is "+factorial);
+		System.out.println("Factorial is "+factorial);//printing factorial
 	}
 
 }
