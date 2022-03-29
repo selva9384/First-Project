@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class SpyNumber {
-
+    //if the sum of digits and multiplication of digits are equal that is called spy number
 	public static void main(String[] args) {
 		SpyNumber sn=new SpyNumber();
 		sn.spynum();
