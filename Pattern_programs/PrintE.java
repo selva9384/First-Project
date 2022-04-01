@@ -1,7 +1,7 @@
 public class PrintE {
 
 	public static void main(String[] args) {
-		PrintE B=new PrintE();
+		PrintE E=new PrintE();
 		B.print();
 	}
 
