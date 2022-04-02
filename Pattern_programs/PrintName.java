@@ -2,17 +2,126 @@
 public class PrintName {
 
 	public static void main(String[] args) {
-		PrintName name=new PrintName();
-		name.printName();
+		PrintName l=new PrintName();
+		l.printS();
+		l.printE();
+		l.printL();
+		l.printV();
+		l.printE();
+		l.printN();
+		l.printD();
+		l.printI();
+		l.printR();
+		l.PrintA();
+		l.printN();
+		l.printInitial();
+	}
+	private void printInitial() {
+		System.out.println(" * ");
+		System.out.println();
+		System.out.println();
+		printR();
+	}
+	private void printR() {
+		for(int i=1;i<=11;i++)
+		{
+			System.out.print("*");
+			if(i==1||i==6)
+			{
+				for(int j=1;j<=4;j++)
+				{
+					System.out.print(" *");
+				}
+			}
+			else if(i<6)
+			{
+				for(int k=1;k<=9;k++)
+				{
+					System.out.print(" ");
+				}
+				System.out.print("*");
+			}
+			else
+			{
+				for(int l=1;l<=i;l++)
+				{
+				System.out.print(" ");
+				}
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+	}
+	private void printI() {
+		for(int i=1;i<=11;i++)
+		{
+			if(i==1||i==11)
+			{
+				for(int j=1;j<=11;j++)
+				{
+					System.out.print("*");
+				}
+			}
+			else
+			{
+				for(int k=1;k<=5;k++)
+				{
+					System.out.print(" ");
+				}
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+	}
+	private void printD() {
+		for(int row=1;row<10;row++)
+		{
+			if(row==1||row==9)
+			{
+				for(int i=1;i<=6;i++)
+				{
+					System.out.print("* ");
+				}
+			}
+			else
+			{
+				System.out.print("*");
+				for(int i=1;i<=11;i++)
+				{
+					System.out.print(" ");
+				}
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+	}
+	private void printN() {
+		for(int row=1;row<=11;row++)
+		{
+			System.out.print("*");
+			for(int j=1;j<=row;j++)
+			{
+				System.out.print(" ");
+			}
+			System.out.print("*");
+			for(int k=11;k>=row;k--)
+			{
+				System.out.print(" ");
+			}
+			System.out.print("*");
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
 	}
 
-	private void printName() {
-		printS();
-		printE();
-		printL();
-		printV();
-		PrintA();
-	}
 	private void PrintA() {
 		for(int row=1;row<=9;row++)
 		{
@@ -36,6 +145,8 @@ public class PrintName {
 			}
 			System.out.println();
 		}
+		System.out.println();
+		System.out.println();
 	}
 
 	private void printV() {
