@@ -1,4 +1,4 @@
-
+//Print A pattern with *
 public class PrintA {
 
 	public static void main(String[] args) {
