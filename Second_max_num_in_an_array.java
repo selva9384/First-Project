@@ -20,3 +20,6 @@ public class Second_max_num_in_an_array {
 	}
 
 }
+
+// leaner meaner stronger can you feel the power terror fire.....
+// thirai thipidikkum vedi vedikkum oruthan vantha padai nadungum......
