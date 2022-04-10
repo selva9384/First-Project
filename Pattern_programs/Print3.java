@@ -1,3 +1,4 @@
+//print number 3 pattern with *
 public class Print3 {
 
 	public static void main(String[] args) {
