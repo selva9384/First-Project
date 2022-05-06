@@ -14,7 +14,7 @@ public class Anagram {
 		if (anagram.isAnagram(str1, str2))
 			System.out.println("These words are anagrams");
 		else
-			System.out.println("These are not anagrams");
+			System.out.println("These words are not anagrams");
 	}
 
 	private boolean isAnagram(String str1, String str2) {
@@ -23,7 +23,7 @@ public class Anagram {
 		if (str1.length() != str2.length())
 			return false;
 		for (int i = 0; i < str1.length(); i++) {
-			if (!str1.contains(str2.charAt(i) + ""))
+			if (!(str1.contains(str2.charAt(i) + "") && str2.contains(str1.charAt(i) + "")))
 				return false;
 		}
 		return true;
